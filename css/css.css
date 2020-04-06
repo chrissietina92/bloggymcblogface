@@ -43,7 +43,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -51,7 +51,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -73,7 +73,10 @@ h1 {
   border: -10px;
   margin: -10px;
   padding-top: 30px;
-  margin-top: 5px;
+  margin-top: 5px; }
+
+.tina h1 {
+
   animation-name: chrissie;
   animation-duration: 3s;
   position: relative;
@@ -133,6 +136,7 @@ h2 {
   align-items: flex-end;
 }
 
+@media (min-width: 700px) {
 
   @keyframes fly{
     0% {
@@ -193,3 +197,42 @@ h2 {
     top: 0px;
   }
 }
+}
+
+/* CSS for love.html */
+
+.container {
+  padding-top: 40px;
+  display: grid;
+  width: 100%;
+  height: 500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+
+.item1{background:LightSkyBlue;}
+.item2{
+  background:LightSalmon;
+  justify-self: center;
+  align-self: start;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+.item6{
+  background:red;
+  align-self: end;
+  }
+.item7{background:purple;}
+.item8{
+  background:green;
+  justify-self: start;
+  }
+.item9{
+  background:yellow;
+}
+.item10 {background:orange;}
+.item11 {
+  background:hotpink;
+  grid-column: 2 / 4;
+      }
